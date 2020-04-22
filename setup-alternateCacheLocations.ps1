@@ -1,4 +1,5 @@
-$cacheBasePath = "C:\_cache";
+# & $PSScriptRoot\clear-nugetcaches.ps1
+$cacheBasePath = "C:\_cache"
 # Set the nuget cache path
 $nugetCachePath = "$cacheBasePath\_nuget"
 New-Item -Path $nugetCachePath -ItemType "directory" -ErrorAction SilentlyContinue

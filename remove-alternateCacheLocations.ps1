@@ -4,3 +4,5 @@
 [Environment]::SetEnvironmentVariable("NuGetCachePath", $null, "Machine")
 # Remove nuget http cache path
 [Environment]::SetEnvironmentVariable("NUGET_HTTP_CACHE_PATH", $null, "Machine")
+$cacheBasePath = "C:\_cache"
+Remove-Item -recurse -force $cacheBasePath
