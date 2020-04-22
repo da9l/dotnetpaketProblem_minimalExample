@@ -6,9 +6,9 @@ New-Item -Path $nugetCachePath -ItemType "directory" -ErrorAction SilentlyContin
 [Environment]::SetEnvironmentVariable("NUGET_PACKAGES", $nugetCachePath, "Machine")
 
 # Set the paket cache path
-$paketCachePath = "$cacheBasePath\_paket"
-New-Item -Path $paketCachePath -ItemType "directory" -ErrorAction SilentlyContinue
-[Environment]::SetEnvironmentVariable("NuGetCachePath", $paketCachePath, "Machine")
+# $paketCachePath = "$cacheBasePath\_paket"
+# New-Item -Path $paketCachePath -ItemType "directory" -ErrorAction SilentlyContinue
+# [Environment]::SetEnvironmentVariable("NuGetCachePath", $paketCachePath, "Machine")
 
 # Set nuget http cache path
 $nugetHttpCachePath = "$cacheBasePath\_nugetHttp"
