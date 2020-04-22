@@ -6,7 +6,7 @@
 2) `run-paket.ps1` for expected behaviour
 3) `clear-nugetCaches.ps1` to clear all existing caches.
 4) `setup-alternateCacheLocations.ps1` for NUGET_PACKAGES, NuGetCachePath, NUGET_HTTP_CACHE_PATH
-5) Start new admin powershell
+5) Close current powershell and Start new admin powershell. (this is necessary to expose the problem)
 6) `run-paket.ps1` yields (error at the end):
 
 ```powershell
